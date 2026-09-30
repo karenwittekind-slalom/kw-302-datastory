@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const props = defineProps<{ focusLabel: string }>()
+const props = withDefaults(defineProps<{ focusLabel: string; focusDetail?: string }>(), {
+  focusDetail: 'Yield proof point',
+})
 
 const valueOutcomes = [
   { value: '+320k', label: 'additional bars', detail: 'more sellable product' },
@@ -19,15 +21,15 @@ const sustainabilityOutcomes = [
 <template>
   <section class="multiplier-network" aria-labelledby="multiplier-network-title">
     <div class="multiplier-network__intro">
-      <p class="multiplier-network__eyebrow">The same 4-point gain, seen two ways</p>
-      <h2 id="multiplier-network-title">One yield decision returns value and takes pressure off the system.</h2>
+      <p class="multiplier-network__eyebrow">The same connected view, seen two ways</p>
+      <h2 id="multiplier-network-title">Better visibility makes the trade-off visible.</h2>
     </div>
 
     <div class="multiplier-network__diagram">
       <div class="multiplier-network__source">
         <span class="multiplier-network__source-label">Operating lever</span>
         <strong>{{ props.focusLabel }}</strong>
-        <span>more of each 1,000 tons becomes sellable product</span>
+        <span>{{ props.focusDetail }} shows how one operating choice affects the whole system.</span>
       </div>
 
       <div class="multiplier-network__bridge" aria-hidden="true">
@@ -72,6 +74,6 @@ const sustainabilityOutcomes = [
       </div>
     </div>
 
-    <p class="multiplier-network__caption">Improving yield does not trade business performance for sustainability. It improves both because the system loses less material before it becomes product.</p>
+    <p class="multiplier-network__caption">Yield is the proof point: connected data helps leaders see how one decision can improve business performance and sustainability together.</p>
   </section>
 </template>

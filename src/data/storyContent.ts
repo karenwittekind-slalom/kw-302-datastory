@@ -10,43 +10,43 @@ export const chapterContent: ChapterContent[] = [
   {
     id: 'growth',
     label: 'Chapter 1',
-    title: 'Growth creates pressure',
-    kicker: 'Demand is growing. The supply chain is working harder to keep up.',
-    body: 'Bean & Bloom grew from 5.2 million bars in 2023 to 7.9 million bars in 2025, but production efficiency did not improve at the same pace.'
+    title: 'Growth creates complexity',
+    kicker: 'Demand is accelerating. Leadership needs a connected view of the pressure behind it.',
+    body: 'Bean & Bloom grew from 5.2 million bars in 2023 to 7.9 million bars in 2025, making disconnected operational signals harder to manage.'
   },
   {
     id: 'hidden-loss',
     label: 'Chapter 2',
     title: 'The hidden loss',
-    kicker: 'Not every ton of cocoa becomes chocolate.',
-    body: 'At the current model, 110 tons of cocoa are lost before finished product reaches customers, split across quality, process, and rework.'
+    kicker: 'A single output number hides where value leaves the process.',
+    body: 'At the current model, 110 tons of cocoa are lost before finished product reaches customers, but the decision requires stage-level visibility.'
   },
   {
     id: 'loss-chain',
     label: 'Chapter 3',
-    title: 'Follow the lost cocoa',
-    kicker: 'Waste does not stop at the production line.',
-    body: 'The downstream effects of that loss show up as lower inventory coverage, more stockout risk, and emergency procurement decisions.'
+    title: 'Connect the consequences',
+    kicker: 'Disconnected metrics hide the decision.',
+    body: 'The downstream effects of loss show up as lower inventory coverage, more stockout risk, emergency procurement, and sustainability pressure.'
   },
   {
     id: 'yield-sim',
     label: 'Chapter 4',
-    title: 'Test the yield lever',
-    kicker: 'What changes when more cocoa becomes sellable product?',
-    body: 'The yield simulator makes the tradeoff visible. A higher conversion rate increases sellable output and lowers waste at the same time.'
+    title: 'Test the trade-off',
+    kicker: 'Connected scenario planning makes the highest-value opportunity visible.',
+    body: 'The simulator demonstrates how leaders can evaluate sellable output, waste, service risk, and carbon in one decision.'
   },
   {
     id: 'strategy',
     label: 'Chapter 5',
     title: 'Compare the strategies',
-    kicker: 'Three strategies reduce risk. Only one improves every outcome.',
-    body: 'Each lever helps, but only a yield-improvement program strengthens product availability, cost, waste, and carbon together.'
+    kicker: 'A shared scorecard makes competing priorities easier to defend.',
+    body: 'Each lever helps in a different way. Connected comparison makes the trade-offs explicit before capital is committed.'
   },
   {
     id: 'final-reveal',
     label: 'Chapter 6',
     title: 'The sustainability multiplier',
-    kicker: 'One operational improvement creates value across the system.',
-    body: 'When yield moves from 89% to 93%, the company captures production, cash, resilience, and sustainability gains in one move.'
+    kicker: 'One connected view reveals value across the system.',
+    body: 'The yield scenario demonstrates how decision intelligence can connect production, cash, resilience, and sustainability outcomes.'
   },
 ]

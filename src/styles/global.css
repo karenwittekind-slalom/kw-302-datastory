@@ -890,13 +890,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 .multiplier-network__diagram {
   display: grid;
-  grid-template-columns: minmax(9rem, 0.7fr) minmax(5rem, 0.35fr) minmax(0, 2.4fr);
+  grid-template-columns: minmax(14rem, 0.8fr) minmax(7rem, 0.45fr) minmax(0, 2fr);
   align-items: center;
-  gap: 1rem;
+  gap: 1.4rem;
   margin-top: 1.8rem;
 }
 
 .multiplier-network__source {
+  min-width: 0;
   display: grid;
   gap: 0.45rem;
   padding: 1.1rem;
@@ -906,9 +907,11 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 .multiplier-network__source strong {
+  min-width: 0;
   color: var(--color-accent-strong);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
   line-height: 1;
+  overflow-wrap: break-word;
 }
 
 .multiplier-network__source > span:last-child {
@@ -956,6 +959,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 .multiplier-network__outcomes {
+  min-width: 0;
   display: grid;
   gap: 1rem;
 }
@@ -973,6 +977,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 .multiplier-network__group-heading {
+  min-width: 0;
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
@@ -995,10 +1000,12 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 .multiplier-network__group-heading h3 {
+  min-width: 0;
   margin: 0.25rem 0 0;
   color: var(--color-ink);
   font-size: 1rem;
   line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 .multiplier-network__cards {

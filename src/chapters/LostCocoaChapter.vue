@@ -23,7 +23,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 3" title="Waste does not stop at the production line." kicker="The cascading effect of annual material loss hits availability, cost, and emissions.">
+  <ChapterShell eyebrow="Chapter 3" title="Disconnected metrics hide the decision." kicker="One loss event moves through availability, inventory, procurement, risk, cost, and carbon.">
     <div class="stats-grid stats-grid--three">
       <MetricCallout value="550k" label="bars lost" tone="default" />
       <MetricCallout value="$1.1M" label="revenue not realized" tone="default" />

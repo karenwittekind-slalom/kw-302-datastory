@@ -1,6 +1,28 @@
 # The Sustainability Multiplier
+### How Better Supply Chain Decisions Create Better Business Outcomes
 
-A static Vue 3 + Vite data story for Bean & Bloom Organic Chocolate, designed to show why improving yield from 89% to 93% is the most compelling operational decision.
+**Live Experience:** [View the Interactive Data Story](https://kw-302-datastory.vercel.app/)  
+**GitHub Repository:** [View Source Code](https://github.com/karenwittekind-slalom/kw-302-datastory)
+
+---
+
+## Overview
+
+This project was created as a Protogen Capstone Project 302 - Data Story.
+
+The Sustainability Multiplier is an interactive data story that explores how operational decisions ripple across an entire business.
+
+Rather than presenting a traditional dashboard full of metrics and filters, this experience uses storytelling, visualization, and scenario modeling to help leaders understand the relationship between supply chain performance, sustainability outcomes, inventory health, and business growth.
+
+The project follows a fictional organic chocolate manufacturer, **Bean & Bloom Organic Chocolate**, and demonstrates how seemingly small operational changes can create significant downstream impacts across profitability, resilience, customer fulfillment, and environmental performance.
+
+The experience was intentionally designed as a narrative-driven decision-support tool rather than a reporting interface. The goal is not simply to display metrics, but to help stakeholders understand tradeoffs, evaluate investment opportunities, and identify where better visibility can drive better decisions.
+
+
+
+# The Sustainability Multiplier
+
+A static Vue 3 + Vite executive data story for fictional Bean & Bloom Organic Chocolate, showing why integrated visibility and decision intelligence can improve growth, resilience, profitability, and sustainability together.
 
 ## Live-demo placeholder
 
@@ -8,36 +30,40 @@ This project is intended to run locally and be deployed to Vercel once a GitHub 
 
 ## Project overview
 
-This experience is built for a sustainability and supply chain manager who needs to answer: what is the highest-impact action that improves product availability, profitability, and sustainability at the same time?
+This experience is built for company leadership and sustainability and supply chain managers who need to answer: what decision-support capability will help the organization understand operational trade-offs and act at scale?
 
-The story gradually reveals that improving yield from 89% to 93% creates the strongest multi-outcome improvement across cost, waste, service levels, emissions, and resilience.
+The story uses an illustrative yield scenario as proof of what connected data and scenario planning can uncover. The recommendation is to invest in integrated supply chain visibility and decision intelligence, not to fund a yield initiative in isolation.
 
 ## User and business challenge
 
-Bean & Bloom is a fictional organic chocolate company with accelerating demand. The company needs to support growth without creating service risk, waste, or avoidable carbon impact. The central challenge is to determine which operational lever creates the best combined outcome.
+Bean & Bloom is a fictional organic chocolate company with accelerating demand and increasing operational complexity. Leaders can see individual outcomes, but disconnected demand, production, inventory, supplier, and sustainability signals make causes and trade-offs difficult to evaluate before decisions are made.
 
 ## Central data-story thesis
 
-Yield is the strongest operational multiplier. When conversion efficiency rises from 89% to 93%, the system produces more sellable product with less waste, lower procurement pressure, fewer stockout events, and lower modeled emissions.
+Better visibility is the sustainability multiplier. When leaders can connect operational signals and test scenarios, they can identify opportunities such as the modeled move from 89% to 93% yield and evaluate its effects across sellable product, waste, service risk, cost, and carbon.
 
 ## Narrative structure
 
-1. Growth creates pressure
+1. Growth creates complexity
 2. The hidden loss
-3. Follow the lost cocoa
-4. Test the yield lever
+3. Connect the consequences
+4. Test the trade-off
 5. Compare the strategies
 6. The sustainability multiplier
+7. Fund the decision-support capability
 
 ## Core interactions
 
-- Scroll-driven narrative flow
-- Demand growth line chart
-- Material loss flow visualization
-- Cause-and-effect cascade with previous and next controls
-- Yield slider that updates value and risk metrics
-- Strategy comparison view with outcome cards and radar chart
-- Final recommendation and restart control
+- Scroll-driven chapter entrances with a persistent progress indicator
+- Interactive annual demand cards with four monthly trend lines, including projected 2026
+- Material-loss flow visualization
+- Clickable cause-and-effect cascade with compact mobile layout and problem, solution, and data-input context
+- Yield scenario slider with connected metric updates and stacked sellable-product/waste bars
+- Selectable strategy cards with a shared normalized comparison radar
+- Chapter 6 multiplier visual showing value and sustainability outcomes from a connected view
+- Chapter 7 executive funding roadmap with staged gates and modeled outcomes
+- Light/dark theme picker labeled White chocolate / Dark chocolate
+- Accessible scroll-to-top control and fictional-data disclaimer in the footer
 
 ## Technology stack
 
@@ -52,7 +78,7 @@ Yield is the strongest operational multiplier. When conversion efficiency rises 
 
 ## Why the stack was selected
 
-The stack balances speed, accessibility, and visual clarity. Vue and Vite keep the static experience lightweight, while Vuetify provides solid, accessible layout primitives. ECharts delivers responsive analytical visuals without a heavy dashboard framework, and custom CSS/SVG keeps the story narrative and editorial feel intact.
+The stack balances speed, accessibility, and visual clarity. Vue and Vite keep the static experience lightweight, while Vuetify provides theme support and accessible primitives. ECharts delivers responsive analytical visuals without a heavy dashboard framework, and custom CSS/SVG keeps the story narrative and editorial feel intact.
 
 ## Local setup instructions
 
@@ -93,12 +119,16 @@ npm run preview
 ```text
 src/
   chapters/
+    ActionPlanChapter.vue
   components/
+    ExecutiveIntro.vue
+    RecommendationCard.vue
   composables/
   data/
   styles/
   utils/
   visualizations/
+    ActionPlanRoadmap.vue
   App.vue
   main.ts
 ```
@@ -121,20 +151,21 @@ The project uses local mock data under `src/data` to describe a fictional supply
 
 - Selective ECharts imports only
 - Lightweight narrative architecture
-- No remote images, fonts, or tracking scripts
+- No remote data services, fonts, or tracking scripts; the supplied logo is the only remote image reference
 - CSS and SVG used instead of heavy visual assets
 - Clean unmount logic for chart and animation lifecycle
 
 ## Current MVP scope
 
-This is a polished single-page data story with six narrative chapters, interactive yield simulation, strategy comparison, and final recommendation. It is designed to be production-ready for a front-end showcase or concept demo.
+This is a polished single-page data story with seven narrative chapters, an executive leadership brief, connected scenario modeling, strategy comparison, decision-tool recommendations, and a staged funding roadmap. It is designed to be production-ready for a front-end showcase or concept demo.
 
 ## Potential next steps
 
-- Add more granular loss mapping by production stage
-- Expand the scenario data model for sensitivity testing
-- Capture stakeholder review notes in a lightweight CMS-like structure
-- Prepare a more detailed QA pass for browser-specific behavior
+- Connect the local decision-support model to production data sources in a future implementation
+- Add more granular supplier and planning scenarios
+- Expand sensitivity testing around assumptions and intervention costs
+- Add stakeholder review and funding-gate capture in a future workflow
+- Prepare a more detailed browser-specific QA pass
 
 ## Fictional-data disclaimer
 

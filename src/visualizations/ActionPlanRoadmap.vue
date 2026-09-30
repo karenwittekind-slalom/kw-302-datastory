@@ -3,23 +3,23 @@ const phases = [
   {
     number: '01',
     timing: 'Weeks 0-4',
-    title: 'Diagnose the loss',
-    copy: 'Instrument yield at quality handling, processing, and packaging.',
-    measure: 'Gate: largest loss causes quantified',
+    title: 'Map the decision gaps',
+    copy: 'Define shared measures across demand, production, inventory, suppliers, and sustainability.',
+    measure: 'Gate: shared definitions and owners agreed',
   },
   {
     number: '02',
     timing: 'Weeks 5-12',
-    title: 'Pilot the 93% target',
-    copy: 'Fund focused fixes and test whether more input becomes sellable product.',
-    measure: 'Gate: 93% yield sustained for 3 cycles',
+    title: 'Pilot the decision workspace',
+    copy: 'Use the yield scenario as a proof point for connected data and cross-functional trade-offs.',
+    measure: 'Gate: one decision reviewed from connected data',
   },
   {
     number: '03',
     timing: 'Weeks 13-26',
     title: 'Scale and govern',
-    copy: 'Embed the scorecard in monthly operations, procurement, and sustainability reviews.',
-    measure: 'Gate: benefits tracked and owned',
+    copy: 'Embed the scorecard in monthly operating, procurement, supplier, and sustainability reviews.',
+    measure: 'Gate: benefits tracked, owned, and acted on',
   },
 ]
 </script>

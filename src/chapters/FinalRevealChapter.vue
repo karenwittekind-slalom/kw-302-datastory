@@ -5,8 +5,8 @@ import MultiplierNetwork from '../visualizations/MultiplierNetwork.vue'
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 6" title="One operational improvement creates value across the system." kicker="Sustainability is not a separate workstream. It is an outcome of smarter operating decisions.">
-    <MultiplierNetwork focus-label="Yield 89 to 93" />
+  <ChapterShell eyebrow="Chapter 6" title="One connected view reveals the multiplier." kicker="The yield scenario is proof of what better decision support can uncover across growth, resilience, profitability, and sustainability.">
+    <MultiplierNetwork focus-label="Connected visibility" focus-detail="Yield proof point" />
     <div class="final-stats">
       <div><strong>320,000</strong><span>additional bars</span></div>
       <div><strong>40</strong><span>fewer tons of waste</span></div>
@@ -21,29 +21,29 @@ import MultiplierNetwork from '../visualizations/MultiplierNetwork.vue'
     <RecommendationCard
       step="06"
       eyebrow="Final recommendation"
-      title="Prioritize a yield-improvement program across the loss points."
-      copy="Focus on processing loss, packaging rework, and material-quality consistency. Track yield improvements alongside product availability, avoided cost, and carbon impact."
-      tool="Yield-to-impact control tower"
-      ai="surface early drift from the 93% target and summarize cross-functional trade-offs for review."
+      title="Invest in integrated supply chain visibility and decision intelligence."
+      copy="Connect demand, inventory, production, supplier performance, and sustainability data into one decision-support experience. Use the yield scenario as a proof point, not a standalone program."
+      tool="Unified decision-support control tower"
+      ai="surface early drift, explain cross-functional trade-offs, and prepare evidence for leadership review."
     />
 
     <div class="recommendation-tools" aria-labelledby="recommendation-tools-title">
       <p id="recommendation-tools-title" class="step-recommendation__eyebrow">Recommended data tools</p>
       <div class="recommendation-tools__grid">
         <div>
-          <h3>Yield control chart</h3>
-          <span>Spot drift from the 93% target before losses compound.</span>
-          <small class="recommendation-tools__ai">AI assist: flag unusual drift and summarize likely causes for review.</small>
+          <h3>Connected KPI layer</h3>
+          <span>Unify demand, production, inventory, supplier, and sustainability signals.</span>
+          <small class="recommendation-tools__ai">AI assist: flag unusual movement and summarize likely drivers for review.</small>
         </div>
         <div>
-          <h3>Loss Pareto</h3>
-          <span>Focus corrective action on the few stages causing most waste.</span>
-          <small class="recommendation-tools__ai">AI assist: cluster quality notes and surface recurring loss patterns.</small>
+          <h3>Scenario planning workspace</h3>
+          <span>Test operational trade-offs before committing capital or capacity.</span>
+          <small class="recommendation-tools__ai">AI assist: compare scenarios and surface the assumptions driving the result.</small>
         </div>
         <div>
-          <h3>Integrated impact scorecard</h3>
+          <h3>Executive impact scorecard</h3>
           <span>Review availability, cost, waste, carbon, and resilience together.</span>
-          <small class="recommendation-tools__ai">AI assist: explain scenario trade-offs while managers make the decision.</small>
+          <small class="recommendation-tools__ai">AI assist: explain trade-offs and draft the questions leadership needs to resolve.</small>
         </div>
       </div>
       <p class="recommendation-tools__disclaimer">AI features are optional decision support and should remain human-reviewed; this story uses no runtime AI.</p>

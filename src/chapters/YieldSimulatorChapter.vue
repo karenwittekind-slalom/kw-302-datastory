@@ -12,7 +12,7 @@ const currentScenario = getYieldScenario(89)
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 4" title="What changes when more cocoa becomes sellable product?" kicker="The yield lever improves product availability and reduces waste without adding a separate workstream.">
+  <ChapterShell eyebrow="Chapter 4" title="Connect the data. Test the trade-off." kicker="This simulator shows what decision intelligence makes possible when operational outcomes can be evaluated together.">
     <div class="yield-simulator">
       <div class="yield-simulator__panel">
         <div class="yield-simulator__header">
@@ -20,7 +20,7 @@ const currentScenario = getYieldScenario(89)
             <label for="yield-slider">Yield</label>
             <div class="yield-simulator__value">{{ scenario.yieldRate }}%</div>
             <p id="yield-slider-hint" class="yield-simulator__hint">
-              Drag to compare improvement scenarios and see how sellable product, waste, service risk, and carbon move together.
+              Change the operating assumption to compare sellable product, waste, service risk, and carbon in one view.
             </p>
           </div>
         </div>
@@ -46,15 +46,15 @@ const currentScenario = getYieldScenario(89)
       <div class="yield-simulator__side">
         <YieldComparison :current="currentScenario" :selected="scenario" />
         <p class="chapter__supporting-copy">
-          At 93% yield, Bean &amp; Bloom produces 7.44 million bars, 320,000 more than the current baseline, while waste falls to 70 tons.
+          The 93% scenario is a proof point: connected assumptions reveal how one operating choice can change availability, cost, waste, and carbon together.
         </p>
       </div>
     </div>
     <StepRecommendation
       step="04"
-      title="Run a controlled yield experiment."
-      copy="Pilot the highest-leverage loss fixes, define success across output, waste, service, and carbon, then use the scenario model to test the expected return."
-      tool="Yield scenario planner with target-versus-actual tracking"
+      title="Use scenarios before funding fixes."
+      copy="Test the trade-offs, define success across output, waste, service, and carbon, then fund the intervention with the clearest balanced case."
+      tool="Decision-support scenario planner with target-versus-actual tracking"
       ai="compare scenarios and explain which outcomes move most as yield changes."
     />
   </ChapterShell>

@@ -7,15 +7,15 @@ import { baselineImpactModel } from '../data/impactModel'
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 7" title="Turn the sustainability multiplier into an operating plan." kicker="A staged funding request gives leadership proof points, ownership, and a measurable path from 89% to 93% yield.">
+  <ChapterShell eyebrow="Chapter 7" title="Fund the decision-support capability." kicker="Start with a measurable proof point, then scale the intelligence layer that helps leaders act on connected signals.">
     <div class="executive-summary">
       <p class="executive-summary__label">The leadership ask</p>
-      <p>Approve a focused yield-improvement program and the measurement capability needed to prove its impact. Release funding in stages as the team validates loss causes, yield performance, and business value.</p>
+      <p>Approve stage one of an integrated visibility program and the measurement capability needed to prove its impact. Release funding in stages as the team connects signals, tests decisions, and validates business value.</p>
     </div>
 
     <ActionPlanRoadmap />
 
-    <div class="action-plan__outcomes" aria-label="Modeled outcomes at the 93 percent yield target">
+    <div class="action-plan__outcomes" aria-label="Modeled outcomes from connected decision support">
       <div><strong>+320k</strong><span>annual bars</span></div>
       <div><strong>-40t</strong><span>annual waste</span></div>
       <div><strong>${{ (baselineImpactModel.avoidedProcurementCost / 1000).toFixed(0) }}k</strong><span>avoided procurement</span></div>
@@ -25,10 +25,10 @@ import { baselineImpactModel } from '../data/impactModel'
     <RecommendationCard
       step="07"
       eyebrow="Leadership decision"
-      title="Approve the first stage now, with the 93% target as the release condition for scale."
-      copy="The program earns continued funding by showing where loss occurs, proving the yield improvement, and connecting the result to availability, cost, waste, and carbon."
-      tool="Executive yield-to-impact scorecard"
-      ai="prepare concise gate reviews, flag missed measures, and surface the decisions leadership needs to make."
+      title="Approve stage one: connect the signals around the yield proof point."
+      copy="The capability earns continued funding by showing where loss occurs, testing the trade-off, and connecting the result to availability, cost, waste, and carbon."
+      tool="Executive decision-intelligence scorecard"
+      ai="prepare concise gate reviews, flag missing evidence, and surface the decisions leadership needs to make."
     />
 
     <p class="chapter-farewell">

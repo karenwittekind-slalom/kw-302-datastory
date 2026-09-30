@@ -790,3 +790,240 @@ The project is complete only when:
 - The final result is ready to commit to GitHub and deploy through Vercel.
 
 Begin by inspecting the workspace, then execute the full build.
+
+
+
+
+
+
+
+## Amendment: Executive Narrative Reframe and Chapter Reordering Guidance
+
+### Purpose
+
+The current experience successfully demonstrates that improving production yield creates meaningful business outcomes. However, executive leadership is not evaluating whether Bean & Bloom should improve yield. Executive leadership is evaluating whether Bean & Bloom should invest in better decision-making capabilities, operational visibility, supply chain intelligence, and integrated data solutions.
+
+The narrative should be refactored to position yield improvement as evidence of the value of better decision-making, not as the primary recommendation.
+
+The primary business case should become:
+
+> Bean & Bloom's biggest challenge is not yield, inventory, sustainability, or supplier performance.
+>
+> The biggest challenge is the organization's ability to understand operational tradeoffs and make informed decisions at scale.
+>
+> Better visibility enables better decisions.
+>
+> Better decisions improve growth, resilience, profitability, and sustainability.
+
+---
+
+### Narrative Objective
+
+Transform the story from:
+
+```text
+Yield is important
+↓
+Improve yield
+```
+
+Into:
+
+```text
+Growth creates complexity
+↓
+Leaders lack visibility
+↓
+Critical metrics are disconnected
+↓
+Hidden opportunities remain undiscovered
+↓
+Better visibility enables better decisions
+↓
+Better decisions improve business outcomes
+↓
+Invest in supply chain intelligence
+```
+
+The desired audience takeaway should be:
+
+> The organization does not need another report.
+>
+> The organization needs an integrated decision-support capability that helps leaders understand operational tradeoffs before decisions are made.
+
+---
+
+### Executive-Level Thesis
+
+The story should communicate the following:
+
+- Demand growth is increasing operational complexity.
+- Leaders are making decisions across disconnected systems and metrics.
+- Waste, inventory risk, supplier performance, and sustainability outcomes are interconnected.
+- Current visibility makes it difficult to identify the highest-value improvement opportunities.
+- Integrated supply chain intelligence enables proactive decision-making.
+- Yield improvement is an example of the value that better visibility can uncover.
+- The recommended investment is improved decision-support and operational intelligence, not simply a yield-improvement initiative.
+
+---
+
+### Chapter Reordering Authorization
+
+The existing chapter structure should be treated as flexible.
+
+You are explicitly authorized to:
+
+- Reorder chapters
+- Rename chapters
+- Rewrite chapter headlines
+- Rewrite explanatory copy
+- Rewrite insight callouts
+- Reposition visualizations
+- Reprioritize the flow of information
+
+You should evaluate whether the current chapter sequence best supports an executive investment narrative.
+
+If a stronger narrative exists, reorganize the story around executive decision-making needs rather than operational process flow.
+
+---
+
+### Preferred Executive Story Structure
+
+Optimize the experience around the following narrative arc:
+
+#### 1. Hook
+
+What business challenge are we facing?
+
+Examples:
+
+- Growth is accelerating.
+- Complexity is increasing.
+- Operational decisions are becoming more difficult.
+
+#### 2. Tension
+
+Why is it becoming harder to operate effectively?
+
+Examples:
+
+- Multiple competing priorities.
+- Rising operational risk.
+- Disconnected operational metrics.
+- Limited planning visibility.
+
+#### 3. Insight
+
+Why are current tools and processes insufficient?
+
+Examples:
+
+- Teams can see outcomes.
+- Teams cannot easily see causes.
+- Tradeoffs are difficult to quantify.
+- Opportunities remain hidden.
+
+#### 4. Proof
+
+What opportunities or risks are hidden today?
+
+Examples:
+
+- Production waste
+- Inventory constraints
+- Supplier disruptions
+- Sustainability impacts
+
+Use yield as a proof point rather than the primary narrative destination.
+
+#### 5. Solution
+
+What becomes possible with better visibility?
+
+Examples:
+
+- Scenario planning
+- Faster decision-making
+- Earlier risk identification
+- Cross-functional alignment
+- Improved prioritization
+
+Reframe the Yield Simulator as a decision-support tool rather than a yield-improvement tool.
+
+#### 6. Recommendation
+
+What should leadership invest in?
+
+Move away from recommending operational improvements alone.
+
+Instead recommend:
+
+- Integrated supply chain visibility
+- Unified data and reporting
+- Connected sustainability metrics
+- Planning and forecasting capabilities
+- Decision-support experiences
+
+#### 7. Outcome
+
+What business value could be unlocked?
+
+Examples:
+
+- Greater resilience
+- Reduced waste
+- Lower operational risk
+- Improved inventory availability
+- Increased profitability
+- Better sustainability outcomes
+
+---
+
+### Yield Simulator Repositioning
+
+The Yield Simulator should remain a core component of the experience.
+
+However, it should be reframed as:
+
+> An example of how connected data and scenario modeling help leaders identify the highest-value opportunities.
+
+The simulator should demonstrate:
+
+- What happens when data is connected.
+- How decision-makers can evaluate tradeoffs.
+- How visibility improves prioritization.
+- How operational intelligence creates business value.
+
+Yield improvement becomes evidence of the solution rather than the solution itself.
+
+---
+
+### Updated Final Recommendation
+
+Replace any recommendation that primarily advocates for yield improvement.
+
+The preferred recommendation should be:
+
+> Invest in integrated supply chain visibility and decision intelligence capabilities that connect demand, inventory, production, supplier performance, and sustainability data into a unified decision-support experience.
+
+Supporting rationale:
+
+- Better visibility improves decision quality.
+- Better decision quality improves operational outcomes.
+- Improved operational outcomes drive resilience, profitability, and sustainability simultaneously.
+
+---
+
+### Success Criteria
+
+The narrative update is successful if executive stakeholders leave the experience understanding:
+
+- Why investment is needed.
+- The cost of continuing with fragmented visibility.
+- How disconnected operational data limits decision quality.
+- Why operational tradeoffs are difficult to manage today.
+- How integrated intelligence enables scenario planning.
+- How better visibility uncovers opportunities like yield improvement.
+- Why a connected decision-support capability creates long-term business value.
+
+The final story should position yield improvement as a compelling proof point while clearly making the case for investment in supply chain intelligence, operational visibility, and data-driven decision support.

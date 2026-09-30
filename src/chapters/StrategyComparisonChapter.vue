@@ -10,7 +10,7 @@ const selectedStrategy = computed(() => strategyScenarios.find((scenario) => sce
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 5" title="Three strategies reduce risk. Only one improves every outcome." kicker="The best lever does not just protect service. It also improves costs, waste, and emissions.">
+  <ChapterShell eyebrow="Chapter 5" title="Compare options before committing capital." kicker="A shared scorecard turns competing priorities into a decision leadership can defend.">
     <div class="strategy-grid">
       <div class="strategy-cards" role="list" aria-label="Strategy options">
         <button
@@ -44,13 +44,13 @@ const selectedStrategy = computed(() => strategyScenarios.find((scenario) => sce
 
     <StrategyImpactChart :selected-id="selectedId" />
     <p class="chapter__supporting-copy">
-      Scores are illustrative relative impact, not an objective industry benchmark. The yield-improvement option remains the strongest balanced choice because it improves availability without increasing carrying cost or waste exposure.
+      Scores are illustrative relative impact, not an objective industry benchmark. The value of the comparison is the connected trade-off view: leadership can prioritize an option without improving one outcome by quietly worsening another.
     </p>
     <StepRecommendation
       step="05"
-      title="Choose the first intervention with the full scorecard."
-      copy="Compare the options across cost, waste, carbon, availability, resilience, and effort, then select the move that improves the system without shifting the problem elsewhere."
-      tool="Weighted strategy scorecard with sustainability outcomes"
+      title="Adopt a cross-functional decision scorecard."
+      copy="Compare cost, waste, carbon, availability, resilience, and effort in one review, then make the trade-off explicit before capital is committed."
+      tool="Weighted strategy scorecard with connected sustainability outcomes"
       ai="summarize trade-offs and identify where a strategy score changes the recommendation."
     />
   </ChapterShell>

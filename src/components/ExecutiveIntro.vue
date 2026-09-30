@@ -2,25 +2,25 @@
   <section class="executive-intro" aria-labelledby="executive-intro-title">
     <div class="executive-intro__lead">
       <p class="executive-intro__eyebrow">Leadership brief</p>
-      <h2 id="executive-intro-title">One yield move. More growth, less waste.</h2>
-      <p>This report follows cocoa from purchase to packaged bar, shows where value is lost, and builds the case for a staged program to move yield from 89% to 93%.</p>
+      <h2 id="executive-intro-title">Growth is complex. Visibility is the multiplier.</h2>
+      <p>This report follows the signals behind availability, cost, waste, and carbon to show how connected decision support can reveal the highest-value moves before capital is committed.</p>
     </div>
 
     <div class="executive-intro__path" aria-label="What this report covers">
       <div>
         <span>01</span>
-        <strong>See the pressure</strong>
-        <small>Growth is increasing the cost of operating with low yield.</small>
+        <strong>Growth creates complexity</strong>
+        <small>Demand is rising while operational trade-offs become harder to see.</small>
       </div>
       <div>
         <span>02</span>
-        <strong>Trace the value</strong>
-        <small>Material loss becomes missed availability, cost, risk, and carbon.</small>
+        <strong>Connect the signals</strong>
+        <small>Production, inventory, supplier, and sustainability outcomes move together.</small>
       </div>
       <div>
         <span>03</span>
-        <strong>Fund the multiplier</strong>
-        <small>A gated action plan turns the 93% target into a measurable decision.</small>
+        <strong>Fund better decisions</strong>
+        <small>A proof point becomes a repeatable intelligence capability.</small>
       </div>
     </div>
   </section>

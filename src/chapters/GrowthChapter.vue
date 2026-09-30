@@ -9,7 +9,7 @@ const selectedYear = ref('2025')
 </script>
 
 <template>
-  <ChapterShell eyebrow="Chapter 1" title="Demand is growing. The supply chain is working harder to keep up." kicker="Can the current supply chain support the next stage of growth?">
+  <ChapterShell eyebrow="Chapter 1" title="Growth is accelerating. Are we seeing the whole system?" kicker="Leadership can see demand, but not always the connected pressure behind it.">
     <p class="chapter__lede">
       Bean &amp; Bloom’s demand grew by approximately 52% over two years, but production efficiency did not improve at the same rate.
     </p>
@@ -62,9 +62,9 @@ const selectedYear = ref('2025')
     </p>
     <StepRecommendation
       step="01"
-      title="Instrument the pressure before it becomes a service problem."
-      copy="Pair monthly demand with capacity, yield, and sellable output so the operating review shows when growth starts to outrun the process."
-      tool="Demand-versus-capacity trend monitor"
+      title="Build a demand-to-capacity view."
+      copy="Pair monthly demand with capacity, yield, and sellable output so leadership can see when growth starts to outrun the process."
+      tool="Connected demand-versus-capacity trend monitor"
       ai="flag unusual demand acceleration and summarize emerging capacity gaps."
     />
   </ChapterShell>
