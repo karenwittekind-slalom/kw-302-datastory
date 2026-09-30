@@ -11,42 +11,48 @@ const emit = defineEmits<{ 'update:activeIndex': [number] }>()
 
 const activeStep = computed(() => props.steps[props.activeIndex] ?? props.steps[0])
 
-const stepForward = () => {
-  emit('update:activeIndex', Math.min(props.activeIndex + 1, props.steps.length - 1))
-}
-
-const stepBackward = () => {
-  emit('update:activeIndex', Math.max(props.activeIndex - 1, 0))
-}
 </script>
 
 <template>
   <div class="impact-cascade" tabindex="0" aria-label="Cause and effect sequence">
-    <div class="impact-cascade__controls">
-      <button type="button" class="story-button" @click="stepBackward" :disabled="activeIndex === 0">Previous</button>
-      <button type="button" class="story-button story-button--primary" @click="stepForward" :disabled="activeIndex === steps.length - 1">Next</button>
-    </div>
-
     <div class="impact-cascade__track">
-      <button
-        v-for="(step, index) in steps"
-        :key="step.id"
-        class="impact-cascade__step"
-        :class="{ 'impact-cascade__step--active': index === activeIndex }"
-        type="button"
-        :aria-pressed="index === activeIndex"
-        @click="emit('update:activeIndex', index)"
-      >
-        <span class="impact-cascade__index">0{{ index + 1 }}</span>
-        <strong>{{ step.label }}</strong>
-        <small>{{ step.detail }}</small>
-      </button>
+      <template v-for="(step, index) in steps" :key="step.id">
+        <button
+          class="impact-cascade__step"
+          :class="{ 'impact-cascade__step--active': index === activeIndex }"
+          type="button"
+          :aria-pressed="index === activeIndex"
+          @click="emit('update:activeIndex', index)"
+        >
+          <span class="impact-cascade__index">0{{ index + 1 }}</span>
+          <strong>{{ step.label }}</strong>
+          <small>{{ step.detail }}</small>
+        </button>
+
+        <div v-if="index === activeIndex" class="impact-cascade__mobile-context">
+          <div class="impact-cascade__focus" aria-live="polite">
+            <p class="impact-cascade__eyebrow">Current step</p>
+            <h3>{{ activeStep.label }}</h3>
+            <div class="impact-cascade__focus-grid">
+              <div><strong>Problem</strong><p>{{ activeStep.detail }}</p></div>
+              <div><strong>Actionable solution</strong><p>{{ activeStep.action }}</p></div>
+              <div><strong>Data input</strong><p>{{ activeStep.dataInput }}</p></div>
+            </div>
+          </div>
+        </div>
+      </template>
     </div>
 
-    <div class="impact-cascade__focus" aria-live="polite">
-      <p class="impact-cascade__eyebrow">Current step</p>
-      <h3>{{ activeStep.label }}</h3>
-      <p>{{ activeStep.detail }}</p>
+    <div class="impact-cascade__desktop-context">
+      <div class="impact-cascade__focus" aria-live="polite">
+        <p class="impact-cascade__eyebrow">Current step</p>
+        <h3>{{ activeStep.label }}</h3>
+        <div class="impact-cascade__focus-grid">
+          <div><strong>Problem</strong><p>{{ activeStep.detail }}</p></div>
+          <div><strong>Actionable solution</strong><p>{{ activeStep.action }}</p></div>
+          <div><strong>Data input</strong><p>{{ activeStep.dataInput }}</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

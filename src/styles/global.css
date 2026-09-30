@@ -536,12 +536,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   gap: 1rem;
 }
 
-.impact-cascade__controls {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.75rem;
-}
-
 .story-button {
   appearance: none;
   border: 1px solid var(--color-border);
@@ -610,6 +604,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   opacity: 1;
 }
 
+.impact-cascade__focus {
+  grid-column: 1 / -1;
+}
+
+.impact-cascade__mobile-context {
+  display: none;
+}
+
 .impact-cascade__index {
   font-size: 0.78rem;
   color: var(--color-text-muted);
@@ -646,6 +648,30 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   margin: 0 0 0.5rem;
   color: var(--color-ink);
   font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.impact-cascade__focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.impact-cascade__focus-grid div {
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.impact-cascade__focus-grid strong {
+  color: var(--color-cocoa);
+  font-size: 0.78rem;
+}
+
+.impact-cascade__focus-grid p {
+  margin: 0.3rem 0 0;
+  color: var(--color-text);
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .yield-simulator {
@@ -1371,6 +1397,18 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     right: 0.8rem;
   }
 
+  .theme-toggle {
+    gap: 0.3rem;
+    min-height: 2.2rem;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.72rem;
+  }
+
+  .theme-toggle svg {
+    width: 14px;
+    height: 14px;
+  }
+
   .meta-pill {
     display: none;
   }
@@ -1400,6 +1438,34 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
   .impact-cascade__track {
     grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .impact-cascade__mobile-context {
+    display: block;
+  }
+
+  .impact-cascade__desktop-context {
+    display: none;
+  }
+
+  .impact-cascade__step {
+    min-height: auto;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .impact-cascade__step:not(.impact-cascade__step--active) small {
+    display: none;
+  }
+
+  .impact-cascade__focus {
+    margin: 0.2rem 0;
+    padding: 0.9rem 1rem;
+  }
+
+  .impact-cascade__focus-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
   }
 
   .multiplier-network__diagram {

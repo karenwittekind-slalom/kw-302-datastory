@@ -20,7 +20,7 @@ const currentScenario = getYieldScenario(89)
             <label for="yield-slider">Yield</label>
             <div class="yield-simulator__value">{{ scenario.yieldRate }}%</div>
             <p id="yield-slider-hint" class="yield-simulator__hint">
-              Drag to model how much of the cocoa input becomes sellable product. Start at the current 89% baseline and test the 93% target.
+              Drag to compare improvement scenarios and see how sellable product, waste, service risk, and carbon move together.
             </p>
           </div>
         </div>
@@ -52,8 +52,8 @@ const currentScenario = getYieldScenario(89)
     </div>
     <StepRecommendation
       step="04"
-      title="Set 93% yield as the first testable target."
-      copy="Pilot the improvements that move yield from 89% toward 93%, then judge the result across sellable product, waste, stockout risk, and carbon together."
+      title="Run a controlled yield experiment."
+      copy="Pilot the highest-leverage loss fixes, define success across output, waste, service, and carbon, then use the scenario model to test the expected return."
       tool="Yield scenario planner with target-versus-actual tracking"
       ai="compare scenarios and explain which outcomes move most as yield changes."
     />

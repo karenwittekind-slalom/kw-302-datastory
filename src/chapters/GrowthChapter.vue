@@ -62,8 +62,8 @@ const selectedYear = ref('2025')
     </p>
     <StepRecommendation
       step="01"
-      title="Make the demand gap visible in the operating review."
-      copy="Track demand growth alongside yield and sellable output each month so production pressure is identified before it becomes a service problem."
+      title="Instrument the pressure before it becomes a service problem."
+      copy="Pair monthly demand with capacity, yield, and sellable output so the operating review shows when growth starts to outrun the process."
       tool="Demand-versus-capacity trend monitor"
       ai="flag unusual demand acceleration and summarize emerging capacity gaps."
     />

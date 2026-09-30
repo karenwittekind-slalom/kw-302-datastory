@@ -48,8 +48,8 @@ const selectedStrategy = computed(() => strategyScenarios.find((scenario) => sce
     </p>
     <StepRecommendation
       step="05"
-      title="Prioritize the lever that improves the whole scorecard."
-      copy="Use yield improvement as the lead option, while keeping cost, waste, carbon, availability, resilience, and implementation effort in the same decision review."
+      title="Choose the first intervention with the full scorecard."
+      copy="Compare the options across cost, waste, carbon, availability, resilience, and effort, then select the move that improves the system without shifting the problem elsewhere."
       tool="Weighted strategy scorecard with sustainability outcomes"
       ai="summarize trade-offs and identify where a strategy score changes the recommendation."
     />

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import ChapterShell from '../components/ChapterShell.vue'
 import MetricCallout from '../components/MetricCallout.vue'
 import ImpactCascade from '../visualizations/ImpactCascade.vue'
@@ -8,8 +8,6 @@ import StepRecommendation from '../components/StepRecommendation.vue'
 
 const activeIndex = ref(0)
 const stepCount = impactChainSteps.length
-
-const currentStep = computed(() => impactChainSteps[activeIndex.value])
 
 const updateStep = (nextIndex: number) => {
   activeIndex.value = Math.min(Math.max(nextIndex, 0), stepCount - 1)
@@ -32,14 +30,11 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
       <MetricCallout value="420t CO2e" label="modeled emissions" tone="risk" />
     </div>
     <ImpactCascade :steps="impactChainSteps" :active-index="activeIndex" @update:active-index="updateStep" />
-    <div class="info-note" aria-live="polite">
-      <strong>Fictional modeled values:</strong> {{ currentStep.label }} leads to fewer finished bars, tighter inventory coverage, more stockout risk, and emergency procurement.
-    </div>
     <StepRecommendation
       step="03"
-      title="Connect loss reporting to the decisions it triggers."
-      copy="Review production loss with inventory, procurement, and sustainability teams so the cost of low yield is managed as one operating issue."
-      tool="Impact chain linking yield, inventory, risk, cost, and carbon"
+      title="Link the loss to the decisions it triggers."
+      copy="Bring production, inventory, procurement, and sustainability into one review so the downstream cost of loss is visible before teams react separately."
+      tool="Impact chain input map linking yield, inventory, risk, cost, and carbon"
       ai="trace likely downstream relationships and draft questions for the cross-functional review."
     />
   </ChapterShell>

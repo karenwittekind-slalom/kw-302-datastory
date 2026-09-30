@@ -2,7 +2,7 @@
   <section class="executive-intro" aria-labelledby="executive-intro-title">
     <div class="executive-intro__lead">
       <p class="executive-intro__eyebrow">Leadership brief</p>
-      <h2 id="executive-intro-title">A small yield improvement can unlock growth, resilience, and sustainability together.</h2>
+      <h2 id="executive-intro-title">One yield move. More growth, less waste.</h2>
       <p>This report follows cocoa from purchase to packaged bar, shows where value is lost, and builds the case for a staged program to move yield from 89% to 93%.</p>
     </div>
 

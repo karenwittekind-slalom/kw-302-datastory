@@ -18,8 +18,8 @@ import StepRecommendation from '../components/StepRecommendation.vue'
     </p>
     <StepRecommendation
       step="02"
-      title="Find the largest loss points before choosing a fix."
-      copy="Measure yield at quality handling, processing, and packaging so improvement work starts where the most material is leaving the product flow."
+      title="Measure where material leaves the flow."
+      copy="Create a stage-level loss log across quality handling, processing, and packaging before choosing the intervention with the greatest leverage."
       tool="Loss Pareto by production stage"
       ai="group operator notes and surface recurring causes behind the largest loss categories."
     />
