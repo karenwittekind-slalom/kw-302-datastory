@@ -1,52 +1,77 @@
 <script setup lang="ts">
 const props = defineProps<{ focusLabel: string }>()
+
+const valueOutcomes = [
+  { value: '+320k', label: 'additional bars', detail: 'more sellable product' },
+  { value: '$430k', label: 'cost avoided', detail: 'less emergency procurement' },
+  { value: '$650k', label: 'revenue protected', detail: 'less stockout exposure' },
+  { value: '+12 days', label: 'inventory coverage', detail: 'more resilience at peak demand' },
+]
+
+const sustainabilityOutcomes = [
+  { value: '-40t', label: 'waste', detail: 'material kept in the product flow' },
+  { value: '36%', label: 'waste reduction', detail: 'less loss from the same input' },
+  { value: '-8 pts', label: 'carbon index', detail: 'lower impact per sellable bar' },
+  { value: '-9 pts', label: 'stockout risk', detail: 'fewer rush decisions and shipments' },
+]
 </script>
 
 <template>
-  <svg viewBox="0 0 700 380" class="multiplier-network" role="img" aria-label="Yield improvement creates value across availability, waste, emissions, resilience, and cost">
-    <defs>
-      <linearGradient id="linkGradient" x1="0%" x2="100%" y1="0%" y2="0%">
-        <stop offset="0%" stop-color="var(--color-leaf)" />
-        <stop offset="100%" stop-color="var(--color-accent-strong)" />
-      </linearGradient>
-    </defs>
+  <section class="multiplier-network" aria-labelledby="multiplier-network-title">
+    <div class="multiplier-network__intro">
+      <p class="multiplier-network__eyebrow">The same 4-point gain, seen two ways</p>
+      <h2 id="multiplier-network-title">One yield decision returns value and takes pressure off the system.</h2>
+    </div>
 
-    <g>
-      <line x1="345" y1="173" x2="134" y2="64" stroke="url(#linkGradient)" stroke-width="2" />
-      <line x1="345" y1="173" x2="175" y2="295" stroke="url(#linkGradient)" stroke-width="2" />
-      <line x1="345" y1="173" x2="540" y2="82" stroke="url(#linkGradient)" stroke-width="2" />
-      <line x1="345" y1="173" x2="530" y2="260" stroke="url(#linkGradient)" stroke-width="2" />
-      <line x1="345" y1="173" x2="392" y2="312" stroke="url(#linkGradient)" stroke-width="2" />
-    </g>
+    <div class="multiplier-network__diagram">
+      <div class="multiplier-network__source">
+        <span class="multiplier-network__source-label">Operating lever</span>
+        <strong>{{ props.focusLabel }}</strong>
+        <span>more of each 1,000 tons becomes sellable product</span>
+      </div>
 
-    <g>
-      <circle cx="350" cy="175" r="55" fill="var(--color-accent-strong)" opacity="0.12" />
-      <circle cx="350" cy="175" r="38" fill="var(--color-accent-strong)" />
-      <text x="350" y="180" text-anchor="middle" fill="var(--color-ink)" font-size="19" font-weight="700">Yield</text>
-      <text x="350" y="198" text-anchor="middle" fill="var(--color-ink)" font-size="19" font-weight="700">89% → 93%</text>
-    </g>
+      <div class="multiplier-network__bridge" aria-hidden="true">
+        <span class="multiplier-network__bridge-line"></span>
+        <span class="multiplier-network__bridge-label">+40 sellable tons</span>
+      </div>
 
-    <g>
-      <g transform="translate(60,35)">
-        <rect x="0" y="0" width="150" height="58" rx="16" fill="var(--color-surface-alt)" stroke="var(--color-border)" />
-        <text x="75" y="25" text-anchor="middle" fill="var(--color-text)" font-size="12">+320k bars</text>
-      </g>
-      <g transform="translate(100,252)">
-        <rect x="0" y="0" width="150" height="58" rx="16" fill="var(--color-surface-alt)" stroke="var(--color-border)" />
-        <text x="75" y="25" text-anchor="middle" fill="var(--color-text)" font-size="12">-40 tons waste</text>
-      </g>
-      <g transform="translate(437,35)">
-        <rect x="0" y="0" width="180" height="58" rx="16" fill="var(--color-surface-alt)" stroke="var(--color-border)" />
-        <text x="90" y="25" text-anchor="middle" fill="var(--color-text)" font-size="12">36% less waste</text>
-      </g>
-      <g transform="translate(465,220)">
-        <rect x="0" y="0" width="180" height="58" rx="16" fill="var(--color-surface-alt)" stroke="var(--color-border)" />
-        <text x="90" y="25" text-anchor="middle" fill="var(--color-text)" font-size="12">$430k cost avoided</text>
-      </g>
-      <g transform="translate(312,292)">
-        <rect x="0" y="0" width="180" height="58" rx="16" fill="var(--color-surface-alt)" stroke="var(--color-border)" />
-        <text x="90" y="25" text-anchor="middle" fill="var(--color-text)" font-size="12">$650k revenue protected</text>
-      </g>
-    </g>
-  </svg>
+      <div class="multiplier-network__outcomes">
+        <section class="multiplier-network__group multiplier-network__group--value" aria-labelledby="value-outcomes-title">
+          <div class="multiplier-network__group-heading">
+            <span class="multiplier-network__marker">01</span>
+            <div>
+              <p>Value created</p>
+              <h3 id="value-outcomes-title">More product. More room to serve demand.</h3>
+            </div>
+          </div>
+          <div class="multiplier-network__cards">
+            <article v-for="outcome in valueOutcomes" :key="outcome.label" class="multiplier-network__card">
+              <strong>{{ outcome.value }}</strong>
+              <span>{{ outcome.label }}</span>
+              <small>{{ outcome.detail }}</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="multiplier-network__group multiplier-network__group--sustainability" aria-labelledby="sustainability-outcomes-title">
+          <div class="multiplier-network__group-heading">
+            <span class="multiplier-network__marker">02</span>
+            <div>
+              <p>Pressure reduced</p>
+              <h3 id="sustainability-outcomes-title">Less loss. Less carbon. Fewer recovery moves.</h3>
+            </div>
+          </div>
+          <div class="multiplier-network__cards">
+            <article v-for="outcome in sustainabilityOutcomes" :key="outcome.label" class="multiplier-network__card">
+              <strong>{{ outcome.value }}</strong>
+              <span>{{ outcome.label }}</span>
+              <small>{{ outcome.detail }}</small>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <p class="multiplier-network__caption">Improving yield does not trade business performance for sustainability. It improves both because the system loses less material before it becomes product.</p>
+  </section>
 </template>

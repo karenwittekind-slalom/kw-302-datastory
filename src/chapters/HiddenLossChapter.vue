@@ -2,6 +2,7 @@
 import ChapterShell from '../components/ChapterShell.vue'
 import MetricCallout from '../components/MetricCallout.vue'
 import MaterialFlowVisualization from '../visualizations/MaterialFlowVisualization.vue'
+import StepRecommendation from '../components/StepRecommendation.vue'
 </script>
 
 <template>
@@ -15,5 +16,12 @@ import MaterialFlowVisualization from '../visualizations/MaterialFlowVisualizati
     <p class="chapter__supporting-copy">
       The loss is concentrated in quality handling, processing, and packaging rework. It is visible in the flow, but it also shows up in service levels, cost, and carbon.
     </p>
+    <StepRecommendation
+      step="02"
+      title="Find the largest loss points before choosing a fix."
+      copy="Measure yield at quality handling, processing, and packaging so improvement work starts where the most material is leaving the product flow."
+      tool="Loss Pareto by production stage"
+      ai="group operator notes and surface recurring causes behind the largest loss categories."
+    />
   </ChapterShell>
 </template>

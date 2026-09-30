@@ -5,10 +5,12 @@ import { RadarChart } from 'echarts/charts'
 import { LegendComponent, RadarComponent, TooltipComponent } from 'echarts/components'
 import { CanvasRenderer } from 'echarts/renderers'
 import { strategyScenarios } from '../data/strategyScenarios'
+import { useChartColors } from '../composables/useChartColors'
 
 use([RadarChart, RadarComponent, LegendComponent, TooltipComponent, CanvasRenderer])
 
 const props = defineProps<{ selectedId: string }>()
+const colors = useChartColors()
 
 const indicatorNames = ['Availability', 'Cost', 'Waste', 'Carbon', 'Resilience', 'Effort']
 
@@ -24,11 +26,11 @@ const data = computed(() => {
     ],
     name: scenario.name,
     itemStyle: {
-      color: scenario.id === props.selectedId ? 'var(--color-accent-strong)' : 'var(--color-text-muted)',
+      color: scenario.id === props.selectedId ? colors.value.accentStrong : colors.value.cocoa,
     },
     lineStyle: {
       width: scenario.id === props.selectedId ? 2.5 : 1.5,
-      color: scenario.id === props.selectedId ? 'var(--color-accent-strong)' : 'var(--color-text-muted)',
+      color: scenario.id === props.selectedId ? colors.value.accentStrong : colors.value.cocoa,
     },
     areaStyle: {
       opacity: scenario.id === props.selectedId ? 0.35 : 0.1,
@@ -46,9 +48,9 @@ const option = computed(() => ({
   radar: {
     indicator: indicatorNames.map((name) => ({ name, max: 5 })),
     radius: '65%',
-    splitLine: { lineStyle: { color: 'var(--color-border-subtle)' } },
-    axisLabel: { color: 'var(--color-text-muted)' },
-    axisLine: { lineStyle: { color: 'var(--color-border)' } },
+    splitLine: { lineStyle: { color: colors.value.borderSubtle } },
+    axisLabel: { color: colors.value.textMuted },
+    axisLine: { lineStyle: { color: colors.value.border } },
   },
   series: [{
     type: 'radar',

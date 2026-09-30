@@ -4,6 +4,7 @@ import ChapterShell from '../components/ChapterShell.vue'
 import MetricCallout from '../components/MetricCallout.vue'
 import ImpactCascade from '../visualizations/ImpactCascade.vue'
 import { impactChainSteps } from '../data/impactModel'
+import StepRecommendation from '../components/StepRecommendation.vue'
 
 const activeIndex = ref(0)
 const stepCount = impactChainSteps.length
@@ -34,5 +35,12 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
     <div class="info-note" aria-live="polite">
       <strong>Fictional modeled values:</strong> {{ currentStep.label }} leads to fewer finished bars, tighter inventory coverage, more stockout risk, and emergency procurement.
     </div>
+    <StepRecommendation
+      step="03"
+      title="Connect loss reporting to the decisions it triggers."
+      copy="Review production loss with inventory, procurement, and sustainability teams so the cost of low yield is managed as one operating issue."
+      tool="Impact chain linking yield, inventory, risk, cost, and carbon"
+      ai="trace likely downstream relationships and draft questions for the cross-functional review."
+    />
   </ChapterShell>
 </template>

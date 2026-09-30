@@ -21,4 +21,24 @@ export const monthlyDemand: DemandPoint[] = [
   { month: 'December', shortLabel: 'Dec', demandMillions: 1.08, yieldRate: 89.5, inventoryCoverage: 17 },
 ]
 
+export const annualDemand = [
+  { year: '2023', demandMillions: 5.2 },
+  { year: '2024', demandMillions: 6.5 },
+  { year: '2025', demandMillions: 7.9 },
+  { year: '2026', demandMillions: 9.3 },
+] as const
+
+const monthlyProfileTotal = monthlyDemand.reduce((total, point) => total + point.demandMillions, 0)
+
+export const monthlyDemandByYear = Object.fromEntries(
+  annualDemand.map(({ year, demandMillions: annualTotal }) => [
+    year,
+    monthlyDemand.map(({ month, shortLabel, demandMillions }) => ({
+      month,
+      shortLabel,
+      demandMillions: (demandMillions / monthlyProfileTotal) * annualTotal,
+    })),
+  ]),
+) as Record<string, Array<Pick<DemandPoint, 'month' | 'shortLabel' | 'demandMillions'>>>
+
 export const annualDemand2025 = monthlyDemand.reduce((total, point) => total + point.demandMillions, 0)

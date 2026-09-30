@@ -28,16 +28,19 @@ const stepBackward = () => {
     </div>
 
     <div class="impact-cascade__track">
-      <div
+      <button
         v-for="(step, index) in steps"
         :key="step.id"
         class="impact-cascade__step"
         :class="{ 'impact-cascade__step--active': index === activeIndex }"
+        type="button"
+        :aria-pressed="index === activeIndex"
+        @click="emit('update:activeIndex', index)"
       >
         <span class="impact-cascade__index">0{{ index + 1 }}</span>
         <strong>{{ step.label }}</strong>
         <small>{{ step.detail }}</small>
-      </div>
+      </button>
     </div>
 
     <div class="impact-cascade__focus" aria-live="polite">

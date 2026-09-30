@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import ChapterShell from '../components/ChapterShell.vue'
 import StrategyImpactChart from '../visualizations/StrategyImpactChart.vue'
 import { strategyScenarios } from '../data/strategyScenarios'
+import StepRecommendation from '../components/StepRecommendation.vue'
 
 const selectedId = ref('yield')
 const selectedStrategy = computed(() => strategyScenarios.find((scenario) => scenario.id === selectedId.value) ?? strategyScenarios[2])
@@ -45,5 +46,12 @@ const selectedStrategy = computed(() => strategyScenarios.find((scenario) => sce
     <p class="chapter__supporting-copy">
       Scores are illustrative relative impact, not an objective industry benchmark. The yield-improvement option remains the strongest balanced choice because it improves availability without increasing carrying cost or waste exposure.
     </p>
+    <StepRecommendation
+      step="05"
+      title="Prioritize the lever that improves the whole scorecard."
+      copy="Use yield improvement as the lead option, while keeping cost, waste, carbon, availability, resilience, and implementation effort in the same decision review."
+      tool="Weighted strategy scorecard with sustainability outcomes"
+      ai="summarize trade-offs and identify where a strategy score changes the recommendation."
+    />
   </ChapterShell>
 </template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ChapterShell from '../components/ChapterShell.vue'
+import RecommendationCard from '../components/RecommendationCard.vue'
 import MultiplierNetwork from '../visualizations/MultiplierNetwork.vue'
 </script>
 
@@ -17,15 +18,36 @@ import MultiplierNetwork from '../visualizations/MultiplierNetwork.vue'
       <div><strong>$650k</strong><span>revenue at risk avoided</span></div>
     </div>
 
-    <div class="recommendation-box">
-      <p class="recommendation-box__label">Recommendation</p>
-      <p>Prioritize a yield-improvement program focused on processing loss, packaging rework, and material-quality consistency. Track yield improvements alongside product availability, avoided cost, and carbon impact.</p>
+    <RecommendationCard
+      step="06"
+      eyebrow="Final recommendation"
+      title="Prioritize a yield-improvement program across the loss points."
+      copy="Focus on processing loss, packaging rework, and material-quality consistency. Track yield improvements alongside product availability, avoided cost, and carbon impact."
+      tool="Yield-to-impact control tower"
+      ai="surface early drift from the 93% target and summarize cross-functional trade-offs for review."
+    />
+
+    <div class="recommendation-tools" aria-labelledby="recommendation-tools-title">
+      <p id="recommendation-tools-title" class="step-recommendation__eyebrow">Recommended data tools</p>
+      <div class="recommendation-tools__grid">
+        <div>
+          <h3>Yield control chart</h3>
+          <span>Spot drift from the 93% target before losses compound.</span>
+          <small class="recommendation-tools__ai">AI assist: flag unusual drift and summarize likely causes for review.</small>
+        </div>
+        <div>
+          <h3>Loss Pareto</h3>
+          <span>Focus corrective action on the few stages causing most waste.</span>
+          <small class="recommendation-tools__ai">AI assist: cluster quality notes and surface recurring loss patterns.</small>
+        </div>
+        <div>
+          <h3>Integrated impact scorecard</h3>
+          <span>Review availability, cost, waste, carbon, and resilience together.</span>
+          <small class="recommendation-tools__ai">AI assist: explain scenario trade-offs while managers make the decision.</small>
+        </div>
+      </div>
+      <p class="recommendation-tools__disclaimer">AI features are optional decision support and should remain human-reviewed; this story uses no runtime AI.</p>
     </div>
 
-    <ol class="next-actions">
-      <li>Investigate the production stages responsible for the largest losses.</li>
-      <li>Establish a 93% yield target and track progress monthly.</li>
-      <li>Connect production-loss reporting to inventory, procurement, and sustainability reviews.</li>
-    </ol>
   </ChapterShell>
 </template>

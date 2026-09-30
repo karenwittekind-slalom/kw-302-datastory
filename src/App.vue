@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { ArrowUp, Leaf } from 'lucide-vue-next'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AppHeader from './components/AppHeader.vue'
@@ -11,6 +12,8 @@ import LostCocoaChapter from './chapters/LostCocoaChapter.vue'
 import YieldSimulatorChapter from './chapters/YieldSimulatorChapter.vue'
 import StrategyComparisonChapter from './chapters/StrategyComparisonChapter.vue'
 import FinalRevealChapter from './chapters/FinalRevealChapter.vue'
+import ActionPlanChapter from './chapters/ActionPlanChapter.vue'
+import ExecutiveIntro from './components/ExecutiveIntro.vue'
 import { useReducedMotion } from './composables/useReducedMotion'
 import { useThemePreference } from './composables/useThemePreference'
 import { validateStoryData } from './utils/validateStoryData'
@@ -34,7 +37,7 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 
   gsap.registerPlugin(ScrollTrigger)
-  const storyChapters = gsap.utils.toArray<HTMLElement>('.chapter')
+  const storyChapters = gsap.utils.toArray<HTMLElement>('.chapter:not(.chapter--restart)')
   storyChapters.forEach((chapter) => {
     gsap.fromTo(
       chapter,
@@ -69,24 +72,39 @@ onBeforeUnmount(() => {
   <div class="story-shell">
     <a href="#main-content" class="skip-link">Skip to content</a>
     <AppHeader :theme="theme" @toggle="toggleTheme" />
-    <DataDisclaimer />
     <StoryProgress :progress="progress" />
 
     <main id="main-content">
+      <ExecutiveIntro />
       <GrowthChapter />
       <HiddenLossChapter />
       <LostCocoaChapter />
       <YieldSimulatorChapter />
       <StrategyComparisonChapter />
       <FinalRevealChapter />
+      <ActionPlanChapter />
     </main>
 
     <div class="chapter chapter--restart">
       <div class="chapter__content">
-        <button type="button" class="story-button story-button--primary" @click="restartStory">
-          Restart story
+        <button
+          type="button"
+          class="story-button story-button--primary story-button--icon"
+          aria-label="Scroll back to the top"
+          title="Scroll back to the top"
+          @click="restartStory"
+        >
+          <ArrowUp :size="22" :stroke-width="2.5" aria-hidden="true" />
         </button>
       </div>
     </div>
+
+    <footer class="report-footer">
+      <DataDisclaimer />
+      <div class="meta-pill report-footer__meta">
+        <Leaf :size="14" aria-hidden="true" />
+        <span>Organic cocoa system</span>
+      </div>
+    </footer>
   </div>
 </template>
